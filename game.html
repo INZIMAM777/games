@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stone Paper Scissor Game</title>
+  <link rel="stylesheet" href="game.css" />
+</head>
+<body>
+  <h1 align="center">Stone Paper Scissor Game</h1>
+  <p align="center">Select one and get your result</p>
+
+  <div class="main">
+  <div id="sub1" class="sub stone" onclick="play('stone')">
+    <img src="https://img.icons8.com/emoji/96/rock-emoji.png" alt="Stone" />
+    <p>Stone</p>
+  </div>
+  <div id="sub2" class="sub paper" onclick="play('paper')">
+    <img src="https://img.icons8.com/emoji/96/page-facing-up.png" alt="Paper" />
+    <p>Paper</p>
+  </div>
+  <div id="sub3" class="sub scissor" onclick="play('scissor')">
+    <img src="https://img.icons8.com/color/96/scissors.png" alt="Scissor" />
+    <p>Scissor</p>
+  </div>
+</div>
+
+
+  <div class="score">
+    <div id="user" class="subscore">
+      <p>User Score</p>
+      <p class="count" id="userc">0</p>
+    </div>
+    <div id="comp" class="subscore">
+      <p>Computer Score</p>
+      <p class="count" id="compc">0</p>
+    </div>
+  </div>
+
+  <div id="Result">
+    <p style="color: white; text-align: center;">
+      Results will appear here...
+    </p>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
